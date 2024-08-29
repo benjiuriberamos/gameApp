@@ -1,0 +1,10 @@
+<form class="form-inline d-block d-sm-flex">
+    <input [formControl]="search" class="form-control mx-sm-1" type="search" placeholder="Search" aria-label="Search"/>
+    <select [formControl]="filterType" class="form-select mx-sm-1" aria-label="Buscar por...">
+        <option selected>Buscar por...</option>
+        <option value="title" selected>Título</option>
+        <option value="genre">Genero</option>
+        <option value="platform">Plataforma</option>
+      </select>
+    <button type="button" (click)="updateName()" id="search" class="btn btn-outline-success my-2 my-sm-0">Search</button>
+</form>

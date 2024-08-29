@@ -1,0 +1,21 @@
+<div *ngIf="game" class="row col-12 justify-content-center">
+    <div class="col col-sm-9" >
+        <h1 class="text-center col-12 py-3"> {{ game.title }} </h1>
+        <div class="col col-12 d-block d-sm-flex justify-content-center">
+            <div class="col-10 col-sm-5 mx-auto mx-3 pt-3">
+                <figure class="figure">
+                    <img src="{{ game.thumbnail }} " width="100%" alt="">
+                </figure>
+            </div>
+            <div class="col col-sm-7 m-3">
+                <p>{{ game.description }}</p>
+                <span>Genero: </span><strong>{{ game.genre }}</strong><br>
+                <span>Fecha de lanzamiento: </span><strong>{{ game.release_date }}</strong><br>
+                <span>Website: </span><strong><a href="{{ game.game_url }}" target="_blank" rel="noopener noreferrer">Website</a></strong>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+<router-outlet />

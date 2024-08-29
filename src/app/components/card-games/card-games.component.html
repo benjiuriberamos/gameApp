@@ -1,0 +1,11 @@
+    <div class="card" style="width: 100%">
+        <img class="card-img-top" src="{{ game.thumbnail }}" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{ game.title }}</h5>
+            <p class="card-text">{{ game.short_description }}</p>
+            <p class="card-text">Género: {{ game.genre }}</p>
+            <p class="card-text">Plataforma: {{ game.platform }}</p>
+            <a href="game/{{ game.id }}" target="_blank" class="btn btn-primary">See more!</a>
+            <a href="{{ game.game_url }}" target="_blank" class="btn btn-success">Go to website!</a>
+        </div>
+    </div>

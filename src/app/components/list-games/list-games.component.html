@@ -1,0 +1,9 @@
+<nav class="navbar navbar-light bg-light justify-content-between mx-5">
+    <a class="navbar-brand">Listado de juegos</a>
+    <app-filter-games (filter)="applyFilter($event)"></app-filter-games>
+</nav>
+<div class="row col-12 mx-auto">
+    <app-card-games *ngFor="let game of toListGames" [game]="game" class="col-12 col-sm-4 p-3"></app-card-games>
+</div>
+
+<router-outlet />
